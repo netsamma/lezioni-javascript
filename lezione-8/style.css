@@ -1,0 +1,59 @@
+#orange-shelf{
+    background: lightsalmon;
+}
+#apple-shelf{
+    background: lightcoral;
+}
+
+#peach-shelf{
+    background: #FFE5B4;
+}
+
+
+
+/* Allineamento verticale mediante table-cell e container */
+
+.container {
+    display: table;
+    width: 100%;
+}
+.orange-shelf {
+    height: 100px; 
+    width: 100%;;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* Allineamento verticale mediante paragrafo interno al div */
+
+.apple-shelf {
+    height: 200px; 
+    text-align: center;
+}
+.apple-shelf p {
+    line-height: 200px; 
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+/* Allineamento verticale a centro pagina mediante flexbox */
+/* note: per height in % togliere <div class="container"> */
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+.peach-shelf {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+

@@ -87,29 +87,29 @@
 // ****************************************************
 
 // Definizione della classe Person
-class Person {
-    constructor(name, age) {
-        this.name = name;
-        this.age = age;
-    }
-    // Metodo della classe Person
-    greet() {
-        return `Hello, my name is ${this.name}.`;
-    }
-}
+// class Person {
+//     constructor(name, age) {
+//         this.name = name;
+//         this.age = age;
+//     }
+//     // Metodo della classe Person
+//     greet() {
+//         return `Hello, my name is ${this.name}.`;
+//     }
+// }
 
-class SuperHuman extends Person {
-    constructor(name, age, superpower) {
-        // Chiamata al costruttore della classe genitore
-        super(name, age);
-        this.superpower = superpower;
-    }
+// class SuperHuman extends Person {
+//     constructor(name, age, superpower) {
+//         // Chiamata al costruttore della classe genitore
+//         super(name, age);
+//         this.superpower = superpower;
+//     }
 
-    // Metodo della classe SuperHuman
-    useSuperpower() {
-        return `I'm using my superpower: ${this.superpower}!`;
-    }
-}
+//     // Metodo della classe SuperHuman
+//     useSuperpower() {
+//         return `I'm using my superpower: ${this.superpower}!`;
+//     }
+// }
 
-const superman = new SuperHuman("Clark", 30, "Volare");
-console.log(superman.age);
+// const superman = new SuperHuman("Clark", 30, "Volare");
+// console.log(superman.age);

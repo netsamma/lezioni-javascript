@@ -2,23 +2,24 @@
 // Lezione 4 - Oggetti: Literal e Costruttore
 // ************************************************************************
 
-// Definisce un oggetto come una serie di coppie chiave-valore
-const book1 = {
-	title: "Il deserto dei tartari",
-	author: "Dino Buzzati",
-	year: 1940,
-	getSummary: function (){
-		return `${this.title} è stato scritto da ${this.author} nel ${this.year}`
-	}
-}
+// // Definisce un oggetto come una serie di coppie chiave-valore
+// const book1 = {
+// 	title: "Il deserto dei tartari",
+// 	author: "Dino Buzzati",
+// 	year: 1940,
+// 	getSummary: function (){
+// 		return `${this.title} è stato scritto da ${this.author} nel ${this.year}`
+// 	}
+// }
 // console.log(book1.getSummary())
+
 
 // Prende tutti i valori dell'oggetto
 // console.log(Object.values(book1))
 
+
 // Prende tutte le chiavi dell'oggetto
 // console.log(Object.keys(book1))
-
 // const book2 = {
 // 	title: "Fattoria degli animali",
 // 	author: "George Orwell",
@@ -27,6 +28,7 @@ const book1 = {
 // 		return `${this.title} è stato scritto da ${this.author} nel ${this.year}`
 // 	}
 // }
+
 
 // const book3 = {
 // 	title: "Il sogno di una notte di mezza estate",
@@ -51,9 +53,11 @@ const book1 = {
 // 	// }
 // }
 
+
 // Book.prototype.getSummary = function() {
 // 	return `${this.title} è stato scritto da ${this.author} nel ${this.year} _proto`
 // }
+
 
 // const book4 = new Book("Il Gattopardo","Giuseppe Tomasi di Lampedusa", 1958)
 // console.log(book4.getSummary());
@@ -65,7 +69,6 @@ const book1 = {
 
 
 // // Mediante prototype - senza metodi
-
 // function Book(title, author, year){
 // 	this.title = title;
 // 	this.author = author;
