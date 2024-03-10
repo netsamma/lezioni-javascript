@@ -31,16 +31,15 @@
 // Esercitazione 2 - Creazione del semplice gioco Emojii Fighter
 // --------------------------------------------------------------------------
 
-// Crea il gioco Emojii Fighter in cui al click di un bottone 
-// prendete due figure random presenti in un Array e memorizzate 
-// come immagini (copiate e incollate da un sito di Emoji)
+// Crea il gioco Emojii Fighter in cui, al click di un bottone, 
+// prendete due figure random presenti nell'array fighters 
+// come immagini (sono state copiate e incollate da un sito di Emoji)
 // e mostratele una di fronte l'altro con la scritta VS in mezzo 
 
 let fighters = ["🐉", "🐥", "🐊","💩", "🦍", "🐢", "🐩", "🦭", "🦀", "🐝", "🤖", "🐘", "🐸", "🕷","🐆", "🦕", "🦁"]
 
 let stageEl = document.getElementById("stage")
 let fightButton = document.getElementById("fight")
-console.log(fightButton)
 fightButton.addEventListener("click", function() {
     // Challenge:
     // When the user clicks on the "Pick Fighters" button, pick two random 
