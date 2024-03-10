@@ -1,0 +1,9 @@
+table {
+	border-collapse: collapse; /* Combiniamo i bordi delle celle */
+}
+
+table,
+th,
+td {
+	border: 1px solid red; /* Impostiamo il bordo rosso sottile */
+}
