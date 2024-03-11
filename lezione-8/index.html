@@ -25,6 +25,32 @@
 		<p id="4">Giorgio: Film che entreranno nella storia</p>
 	</div> -->
 
+	<h2>Gestione eventi DOM</h2>	
+	
+	<p id="par1">This is a paragraph.</p>
+    <button onclick="document.getElementById('par1').innerHTML = 'Nuovo testo'">Clicca</button>
+    
+	<button onclick="mostraMessaggio('Ciao')">Premi</button>
+    <button id="butt1">Premi</button>
+    <button id="butt2">Premi</button>
+    
+	<div id="miodiv1" 
+		onmouseover="changeColor('red','miodiv1')" 
+		onmouseout="changeColor('','miodiv1')">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+			Nihil tempora deleniti quibusdam esse nam. Sequi, numquam magni? 
+			Ea hic iure, laudantium, pariatur quo labore asperiores est atque 
+			saepe praesentium odit.
+	</div>
+
+    <div id="miodiv2">
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+		Nihil tempora deleniti quibusdam esse nam. Sequi, numquam magni? 
+		Ea hic iure, laudantium, pariatur quo labore asperiores est atque 
+		saepe praesentium odit.
+	</div>
+
+
 	<!-- <h2>Frutti</h2>
 	<div class="container">
 		<div class="orange-shelf" id="orange-shelf">🍊</div>
@@ -36,9 +62,11 @@
 		<p>🍑</p>
 	</div> -->
 	
-	<h1>Emoji<br>Fighter</h1>
+
+
+	<!-- <h1>Emoji<br>Fighter</h1>
 	<div id="stage"></div>
-	<button id="fight">Pick Fighter</button>		
+	<button id="fight">Pick Fighter</button>-->
 
 
 	<script src="app.js"></script>

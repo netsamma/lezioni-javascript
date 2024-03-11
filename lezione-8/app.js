@@ -28,6 +28,39 @@
 
 
 // --------------------------------------------------------------------------
+// Eventi - EventHandler
+// --------------------------------------------------------------------------
+
+function changeColor(color, id){
+    document.getElementById(id).style.background = color
+}
+
+document.getElementById("miodiv2").addEventListener('mouseover', function(){
+    changeColor("green", "miodiv2")
+})
+document.getElementById("miodiv2").addEventListener('mouseout', function(){
+    changeColor("", "miodiv2")
+})
+
+function mostraMessaggio(messaggio){
+    alert(messaggio)
+}
+
+function mostraMessaggioCB(){
+    alert("Ciao dalla callback SENZA parametro")
+}
+document.getElementById("butt1").addEventListener('click', mostraMessaggioCB)
+
+function mostraMessaggioCBParametro(messaggio){
+    alert(messaggio)
+}
+document.getElementById("butt2").addEventListener('click', function (){
+    var messaggio = "Ciao dalla callback CON parametro"
+    mostraMessaggioCBParametro(messaggio)
+})
+
+
+// --------------------------------------------------------------------------
 // Esercitazione 2 - Creazione del semplice gioco Emojii Fighter
 // --------------------------------------------------------------------------
 
