@@ -91,5 +91,14 @@ h1 {
 
 
 
+/* Eventi DOM ed Event handler */
 
+#miodiv3:hover {
+    background-color: blue;
+    color: white;
+}
+
+div {
+     cursor: pointer;
+}
 
