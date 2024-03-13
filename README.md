@@ -1,7 +1,7 @@
 # Corsi di Formazione Backend e Frontend DEveloper presso Arces Palermo
 ## Modulo Javascrip
 
-## Elenco delle lezioni
+Elenco delle lezioni
 
 Lezione 1
 Lezione 2
