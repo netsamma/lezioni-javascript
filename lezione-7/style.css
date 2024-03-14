@@ -1,3 +1,5 @@
+/* Esercizio aggiunta riga a tabella HTML */
+
 table {
 	border-collapse: collapse; /* Combiniamo i bordi delle celle */
 }
@@ -6,4 +8,24 @@ table,
 th,
 td {
 	border: 1px solid red; /* Impostiamo il bordo rosso sottile */
+}
+
+
+
+/* Esercizio griglia prodotti e-commerce */
+
+#grid_prodotti {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+}
+
+.prodotto {
+    background-color: red;
+    border: solid black;
+}
+
+img{
+    width: 100%;
 }

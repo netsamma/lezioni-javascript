@@ -10,4 +10,4 @@ Lezione 4
 Lezione 5
 Lezione 6
 
-[Sito web](https://lezioni-javascript.vercel.com)
+[Sito web](https://lezioni-javascript.vercel.app)
