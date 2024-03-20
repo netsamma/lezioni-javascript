@@ -89,6 +89,12 @@
 
 
 
+
+
+
+
+
+
 // --------------------------------------------------------------------------
 // Esercitazione 5 - Creazione del semplice gioco Emojii Fighter
 // --------------------------------------------------------------------------
@@ -97,30 +103,68 @@
 // come immagini (sono state copiate e incollate da un sito di Emoji)
 // e mostratele una di fronte l'altro con la scritta VS in mezzo 
 
-// let fighters = ["🐉", "🐥", "🐊","💩", "🦍", "🐢", "🐩", "🦭", "🦀", "🐝", "🤖", "🐘", "🐸", "🕷","🐆", "🦕", "🦁"]
+let fighters = ["🐉", "🐥", "🐊","💩", "🦍", "🐢", "🐩", "🦭", "🦀", "🐝", "🤖", "🐘", "🐸", "🕷","🐆", "🦕", "🦁"]
 
-// let stageEl = document.getElementById("stage")
-// let fightButton = document.getElementById("fight")
-// fightButton.addEventListener("click", function() {
-//     // Challenge:
-//     // When the user clicks on the "Pick Fighters" button, pick two random 
-//     // emoji fighters and display them as i.e. "🦀 vs 🐢" in the "stage" <div>.
-// })
+let stageEl = document.getElementById("stage")
+let fightButton = document.getElementById("fight")
+fightButton.addEventListener("click", function() {
+    // Challenge:
+    // When the user clicks on the "Pick Fighters" button, pick two random 
+    // emoji fighters and display them as i.e. "🦀 vs 🐢" in the "stage" <div>.
+
+    //************************************************************************
+    // Modo 1
+    //************************************************************************
+
+    // // Puliamo lo stage del gioco
+    // while(stageEl.hasChildNodes() ){
+    //     stageEl.removeChild(stageEl.lastChild);
+    // }
+
+    // // Piazziamo i due emojii e la scritta vs
+    // let emoj1 = document.createTextNode(fighters[0])
+    // let vs = document.createTextNode(" Vs ")
+    // let emoj2 = document.createTextNode(fighters[1])
+    // stageEl.appendChild(emoj1)
+    // stageEl.appendChild(vs)
+    // stageEl.appendChild(emoj2)
+
+    //************************************************************************
+    // Modo 2
+    //************************************************************************
+
+    // Scegliamo due immagini random tra le 16
+    let sx = fighters[Math.floor(Math.random()*16)]
+    let dx = fighters[Math.floor(Math.random()*16)]
+
+    // Scriviamo un template HTML e lo sostituiamo all'innerHtml del DIV stage
+    html = `${sx} Vs ${dx}`
+    stageEl.innerHTML = html
+
+})
+
+
+
+
+
+
+
+
 
 
 // --------------------------------------------------------------------------
 // Esercitazione 6 - Eventi Tastiera - Conversione Celsius Fahrenheit 
 // --------------------------------------------------------------------------
-document.getElementById("celsius").addEventListener("keydown", function(event) {
-    if (event.key === "Enter") {
-        let celsius =  document.getElementById("celsius").value;
-        // let celsius = event.target.value
-        let fahrenheit =  convertCelsiusToFahrenheit(celsius);
-        document.getElementById("fahrenheit").innerHTML = fahrenheit;
-    }
- });
+// document.getElementById("celsius").addEventListener("keydown", function(event) {
+//     if (event.key === "Enter") {
+//         let celsius =  document.getElementById("celsius").value;
+//         // let celsius = event.target.value
+//         let fahrenheit =  convertCelsiusToFahrenheit(celsius);
+//         document.getElementById("fahrenheit").innerHTML = fahrenheit;
+//     }
+//  });
  
-function convertCelsiusToFahrenheit(celsius) {
-    var fahrenheit = celsius * 9/5 + 32;
-    return fahrenheit;
-}
+// function convertCelsiusToFahrenheit(celsius) {
+//     var fahrenheit = celsius * 9/5 + 32;
+//     return fahrenheit;
+// }
