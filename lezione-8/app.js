@@ -90,13 +90,57 @@
 
 
 
+// --------------------------------------------------------------------------
+// Esercitazione 5 - Al click di una cella illumina colorandola di giallo
+// --------------------------------------------------------------------------
+
+// -----------
+// Versione 1
+// -----------
+
+// // Get the table element
+// var table = document.getElementById("tabella1");
+// // Get all the cells in the table
+// var cells = table.getElementsByTagName("td");
+// // Loop through all cells and add click event listener
+// for (var i = 0; i < cells.length; i++) {
+//    cells[i].addEventListener("click", illuminadiimmenso);
+// }
+
+// function illuminadiimmenso(){
+//     // Remove any previously highlighted cells
+//     var highlightedCells = table.getElementsByClassName("highlight");
+//     for (var j = 0; j < highlightedCells.length; j++) {
+//         highlightedCells[j].classList.remove("highlight");
+//     }
+//     // Highlight the clicked cell
+//     this.classList.add("highlight");
+// }
+
+// -----------
+// Versione 2
+// -----------
+
+var table = document.getElementById("tabella1");
+
+table.addEventListener('click', function(event){
+    if (event.target.tagName === "TD") {
+        // Remove any previously highlighted cells
+        var highlightedCells = table.getElementsByClassName("highlight");
+        for (var j = 0; j < highlightedCells.length; j++) {
+            highlightedCells[j].classList.remove("highlight");
+        }
+        // Highlight the clicked cell
+        event.target.classList.add("highlight");
+    }
+})
 
 
 
 
 
 // --------------------------------------------------------------------------
-// Esercitazione 5 - Creazione del semplice gioco Emojii Fighter
+// Esercitazione 6 - Creazione del semplice gioco Emojii Fighter
 // --------------------------------------------------------------------------
 // Crea il gioco Emojii Fighter in cui, al click di un bottone, 
 // prendete due figure random presenti nell'array fighters 
